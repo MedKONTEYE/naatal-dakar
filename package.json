@@ -1,0 +1,33 @@
+{
+  "name": "naatal-dakar",
+  "version": "1.0.0",
+  "description": "NAATAL DAKAR - Plateforme intelligente de gestion environnementale de la Ville de Dakar",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev:backend": "cd backend && npm run dev",
+    "install:all": "npm install && cd frontend && npm install && cd ../backend && npm install",
+    "start": "concurrently \"npm run start:backend\" \"npm run start:frontend\"",
+    "start:frontend": "cd frontend && npm run preview",
+    "start:backend": "cd backend && npm start",
+    "share": "powershell -ExecutionPolicy Bypass -File ./partager-en-ligne.ps1",
+    "build:frontend": "npm --prefix frontend run build",
+    "make": "npm run build:frontend && electron-forge make"
+  },
+  "keywords": [
+    "naatal",
+    "dakar",
+    "environnement",
+    "reverdissement",
+    "salubrité"
+  ],
+  "author": "Ville de Dakar - DPDD",
+  "license": "MIT",
+  "devDependencies": {
+    "@electron-forge/cli": "^8.0.1",
+    "@electron-forge/maker-squirrel": "^8.0.1",
+    "concurrently": "^8.2.2",
+    "electron": "^45.2.3"
+  }
+}

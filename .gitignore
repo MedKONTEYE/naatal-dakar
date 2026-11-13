@@ -1,0 +1,62 @@
+# Dependances
+node_modules/
+jspm_packages/
+
+# Build et distribution
+dist/
+build/
+out/
+release/
+.vite/
+.cache/
+frontend/dist/
+frontend/build/
+*.asar
+*.nupkg
+
+# Environnement et secrets
+# Ne jamais versionner les vraies valeurs : utiliser .env.example
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+secrets/
+
+# Journaux
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Donnees locales et fichiers generes
+uploads/
+backend/uploads/
+*.sqlite
+*.sqlite3
+*.db
+*.bak
+*.tmp
+temp/
+tmp/
+execution.txt
+
+# Systeme d'exploitation
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editeurs et IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Tests et couverture
+coverage/
+.nyc_output/
