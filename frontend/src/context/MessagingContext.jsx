@@ -149,7 +149,8 @@ export const MessagingProvider = ({ children }) => {
     const token = localStorage.getItem(AUTH_TOKEN_KEY);
     if (!token) return undefined;
 
-    const socket = io({
+    const backendUrl = localStorage.getItem('naatal_api_url') || import.meta.env.VITE_API_BASE_URL || undefined;
+    const socket = io(backendUrl, {
       auth: { token },
       withCredentials: true,
       transports: ['websocket', 'polling'],

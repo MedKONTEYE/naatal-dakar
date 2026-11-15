@@ -1,0 +1,9 @@
+{
+  "appId": "sn.villededakar.naatal",
+  "appName": "NAATAL DAKAR",
+  "webDir": "dist",
+  "server": {
+    "androidScheme": "https",
+    "cleartext": true
+  }
+}

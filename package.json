@@ -13,6 +13,8 @@
     "start:backend": "cd backend && npm start",
     "share": "powershell -ExecutionPolicy Bypass -File ./partager-en-ligne.ps1",
     "build:frontend": "npm --prefix frontend run build",
+    "cap:sync": "npm --prefix frontend run cap:sync",
+    "cap:open": "npm --prefix frontend run cap:open",
     "make": "npm run build:frontend && electron-forge make"
   },
   "keywords": [
